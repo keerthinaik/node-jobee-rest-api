@@ -1,0 +1,20 @@
+{
+  "name": "jobee-api",
+  "version": "1.0.0",
+  "description": "this app is regarding apis for job portal",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "prod": "setNODE_ENV=production & node app.js"
+  },
+  "author": "KEERTHINAIK R",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
