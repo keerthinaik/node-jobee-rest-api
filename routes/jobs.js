@@ -1,11 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/jobs', (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: 'Jobs route is working'
-    });
-});
+// Importing job controller methods
+const { getJobs } = require('../controllers/jobsController');
+
+router.route('/jobs').get(getJobs);
 
 module.exports = router;
